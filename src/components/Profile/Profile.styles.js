@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-const ProfileContainer = styled.section`
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const ProfileWrapper = styled.div`
   min-width: 400px;
   display: flex;
@@ -89,7 +81,6 @@ const StatsLiSpan = styled.span`
 export {
   StatsLi,
   DescriptionP,
-  ProfileContainer,
   ProfileDescription,
   ProfileImage,
   ProfileWrapper,

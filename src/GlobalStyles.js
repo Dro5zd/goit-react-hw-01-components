@@ -40,13 +40,16 @@ export const Global = createGlobalStyle`
   }
 
   section {
-    scroll-snap-align: start;
-    min-block-size: 100vh;
-    scroll-snap-stop: always;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:nth-of-type(even) {
-      background: hsl(320 80% 40%);
-    }
+    scroll-snap-align: start;
+    //min-block-size: 100vh;
+    scroll-snap-stop: always;
+    background: hsl(320 80% 40%);
 
     &:nth-of-type(odd) {
       background: hsl(290 80% 40%);

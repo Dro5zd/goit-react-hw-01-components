@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FriendListItem } from '../FriendListItem/FriendListItem';
-import { FriendListContainer, FriendListWrapper } from './FriendList.styles';
+import { FriendListWrapper } from './FriendList.styles';
 
 export const FriendList = ({ friends }) => {
   return (
-    <FriendListContainer id='friendsList'>
-      <FriendListWrapper className='friend-list'>
+    <section id='friendsList'>
+      <FriendListWrapper>
         {friends.map(f => {
           return <FriendListItem key={f.id}
                                  avatar={f.avatar}
@@ -14,7 +14,7 @@ export const FriendList = ({ friends }) => {
                                  isOnline={f.isOnline} />;
         })}
       </FriendListWrapper>
-    </FriendListContainer>
+    </section>
 
   );
 };

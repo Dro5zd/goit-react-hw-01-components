@@ -1,13 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  StatisticsContainer,
-  StatisticsTitle,
-  StatisticsWrapper,
-  StatsLi,
-  StatsLiSpan,
-  StatsUl,
-} from './Statistics.styles';
+import { StatisticsTitle, StatisticsWrapper, StatsLi, StatsLiSpan, StatsUl } from './Statistics.styles';
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -20,7 +13,7 @@ export const Statistics = ({
                              stats,
                            }) => {
   return (
-    <StatisticsContainer id='statistics'>
+    <section id='statistics'>
       <StatisticsWrapper>
         {title.length > 0 && <StatisticsTitle className='title'>{title.toUpperCase()}</StatisticsTitle>}
         <StatsUl>
@@ -34,7 +27,7 @@ export const Statistics = ({
           })}
         </StatsUl>
       </StatisticsWrapper>
-    </StatisticsContainer>
+    </section>
   );
 };
 

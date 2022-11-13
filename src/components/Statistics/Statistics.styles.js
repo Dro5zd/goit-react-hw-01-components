@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-const StatisticsContainer = styled.section`
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const StatisticsWrapper = styled.div`
   min-width: 400px;
   display: flex;
@@ -51,5 +43,5 @@ const StatsLiSpan = styled.span`
   }
 `;
 
-export { StatsLi, StatisticsContainer, StatisticsTitle, StatisticsWrapper, StatsLiSpan, StatsUl };
+export { StatsLi, StatisticsTitle, StatisticsWrapper, StatsLiSpan, StatsUl };
 

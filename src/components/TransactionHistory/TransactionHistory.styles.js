@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
 const TransactionHistoryContainer = styled.section`
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 100px;
 `;
 

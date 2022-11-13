@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { v4 as uuid4 } from 'uuid';
 import {
   DescriptionP,
-  ProfileContainer,
   ProfileDescription,
   ProfileImage,
   ProfileWrapper,
@@ -21,7 +20,7 @@ export const Profile = ({
                         }) => {
   const statsValues = Object.entries(stats);
   return (
-    <ProfileContainer id='profile'>
+    <section id='profile'>
       <ProfileWrapper>
         <ProfileDescription>
           <ProfileImage
@@ -42,7 +41,7 @@ export const Profile = ({
           })}
         </StatsUl>
       </ProfileWrapper>
-    </ProfileContainer>
+    </section>
   );
 };
 
