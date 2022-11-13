@@ -6,7 +6,6 @@ const TransactionHistoryContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d0d0d0;
   padding: 100px;
 `;
 
@@ -17,6 +16,7 @@ const TransactionHistoryWrapper = styled.table`
   box-shadow: 5px 5px 7px 0 rgba(136, 136, 136, 0.3);
   border-collapse: collapse;
   color: grey;
+
   & th {
     height: 70px;
     background-color: #03ccf3;

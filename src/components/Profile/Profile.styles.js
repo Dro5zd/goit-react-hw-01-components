@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
-
 const ProfileContainer = styled.section`
   min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #888888;
 `;
 
 const ProfileWrapper = styled.div`
@@ -35,12 +33,14 @@ const ProfileDescription = styled.div`
 const DescriptionP = styled.p`
   margin-bottom: 20px;
   color: grey;
+
   &.name {
     color: inherit;
     font-weight: bold;
     font-size: 30px;
   }
-  &:last-child{
+
+  &:last-child {
     margin-bottom: 0;
   }
 `;
@@ -68,7 +68,8 @@ const StatsLi = styled.li`
   background-color: #efefef;
   border-top: 1px solid grey;
   border-right: 1px solid grey;
-  &:last-child{
+
+  &:last-child {
     border-right: none;
   }
 `;
@@ -76,7 +77,8 @@ const StatsLi = styled.li`
 const StatsLiSpan = styled.span`
   margin-bottom: 10px;
   color: grey;
-  &.quantity{
+
+  &.quantity {
     color: inherit;
     margin-bottom: 0;
     font-size: 25px;
@@ -84,4 +86,13 @@ const StatsLiSpan = styled.span`
   }
 `;
 
-export { StatsLi, DescriptionP, ProfileContainer, ProfileDescription, ProfileImage, ProfileWrapper, StatsLiSpan, StatsUl}
+export {
+  StatsLi,
+  DescriptionP,
+  ProfileContainer,
+  ProfileDescription,
+  ProfileImage,
+  ProfileWrapper,
+  StatsLiSpan,
+  StatsUl,
+};

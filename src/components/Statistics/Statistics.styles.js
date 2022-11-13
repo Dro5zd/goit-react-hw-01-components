@@ -51,5 +51,5 @@ const StatsLiSpan = styled.span`
   }
 `;
 
-export { StatsLi, StatisticsContainer, StatisticsTitle, StatisticsWrapper, StatsLiSpan, StatsUl}
+export { StatsLi, StatisticsContainer, StatisticsTitle, StatisticsWrapper, StatsLiSpan, StatsUl };
 

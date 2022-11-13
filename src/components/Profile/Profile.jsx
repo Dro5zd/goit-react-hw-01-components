@@ -21,7 +21,7 @@ export const Profile = ({
                         }) => {
   const statsValues = Object.entries(stats);
   return (
-    <ProfileContainer>
+    <ProfileContainer id='profile'>
       <ProfileWrapper>
         <ProfileDescription>
           <ProfileImage

@@ -5,7 +5,7 @@ import { FriendListContainer, FriendListWrapper } from './FriendList.styles';
 
 export const FriendList = ({ friends }) => {
   return (
-    <FriendListContainer>
+    <FriendListContainer id='friendsList'>
       <FriendListWrapper className='friend-list'>
         {friends.map(f => {
           return <FriendListItem key={f.id}

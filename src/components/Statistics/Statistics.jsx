@@ -20,7 +20,7 @@ export const Statistics = ({
                              stats,
                            }) => {
   return (
-    <StatisticsContainer>
+    <StatisticsContainer id='statistics'>
       <StatisticsWrapper>
         {title.length > 0 && <StatisticsTitle className='title'>{title.toUpperCase()}</StatisticsTitle>}
         <StatsUl>

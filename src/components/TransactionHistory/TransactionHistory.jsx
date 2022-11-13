@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <TransactionHistoryContainer>
+    <TransactionHistoryContainer id='transactionHistory'>
       <TransactionHistoryWrapper>
         <thead>
         <tr>

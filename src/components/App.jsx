@@ -7,6 +7,7 @@ import items from '../data/transactions.json';
 import styled from 'styled-components';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { Menu } from './Menu/Menu';
 
 const AppWrapper = styled.div`
   display: flex;
@@ -21,6 +22,7 @@ const AppWrapper = styled.div`
 export const App = () => {
   return (
     <AppWrapper>
+      <Menu />
       <Profile
         username={user.username}
         tag={user.tag}

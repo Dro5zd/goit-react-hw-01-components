@@ -6,7 +6,6 @@ const FriendListContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  //background-color: #757575;
 `;
 
 const FriendListWrapper = styled.ul`
@@ -19,5 +18,5 @@ const FriendListWrapper = styled.ul`
   font-size: 20px;
 `;
 
-export {FriendListContainer, FriendListWrapper}
+export { FriendListContainer, FriendListWrapper };
 

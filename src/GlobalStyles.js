@@ -1,4 +1,4 @@
-import { createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const Global = createGlobalStyle`
   * {
@@ -43,6 +43,7 @@ export const Global = createGlobalStyle`
     scroll-snap-align: start;
     min-block-size: 100vh;
     scroll-snap-stop: always;
+
     &:nth-of-type(even) {
       background: hsl(320 80% 40%);
     }
