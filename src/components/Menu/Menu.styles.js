@@ -1,24 +1,6 @@
 import styled from 'styled-components';
 
-const Input = styled.input.attrs({ type: 'checkbox' })`
-  opacity: 0;
-
-  &:checked + Label > span {
-    transform: rotate(45deg);
-  }
-
-  &:checked + Label > span::before {
-    top: 0;
-    transform: rotate(0deg);
-  }
-
-  &:checked + Label > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-`;
-
-const Label = styled.label`
+const Button = styled.label`
   position: fixed;
   top: 40px;
   left: 30px;
@@ -63,12 +45,15 @@ const MenuBox = styled.ul`
   background-color: #e2c3ff;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
-
-  Input:checked ~ & {
-    left: 0 !important;
-  }
 `;
 
+const DropDown = styled.div`
+  position: relative;
+  display: inline-block;
+  &:hover ${MenuBox} {
+    left: 0 !important;
+  }
+`
 const MenuItem = styled.a`
   display: block;
   padding: 12px 24px;
@@ -84,4 +69,4 @@ const MenuItem = styled.a`
   }
 `;
 
-export { Input, Label, MenuBox, MenuItem };
+export { Button, MenuBox, MenuItem, DropDown };
